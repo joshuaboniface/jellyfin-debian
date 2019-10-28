@@ -1,0 +1,4 @@
+version=4
+opts="filenamemangle=s%(?:.*?)?v?(\d[\d.]*)\.tar\.gz%jellyfin-$1.tar.gz%" \
+    https://github.com/jellyfin/jellyfin/tags \
+    (?:.*?/)?v?(\d[\d.]*)\.tar\.gz debian uupdate
